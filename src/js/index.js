@@ -85,16 +85,5 @@ const onLoadMoreBtnElClick = event => {
     });
 };
 
-function showLoadMorePage() {
-  if (checkIfEndOfPage()) {
-    onLoadMoreBtnElClick();
-  }
-}
-
-function checkIfEndOfPage() {
-  return (
-    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight
-  );
-}
 searchFormEl.addEventListener('submit', onSearchFormElSubmit);
 loadMoreBtnEl.addEventListener('click', onLoadMoreBtnElClick);
