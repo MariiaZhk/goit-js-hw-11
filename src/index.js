@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { lightbox } from './jpartials-js/simplelightbox.js';
-import { PixabayAPI } from './jpartials-js/pixabay-api.js';
-import { createGalleryCardsTemplate } from './jpartials-js/templates/gallery-cards.js';
+import { lightbox } from './partials-js/simplelightbox.js';
+import { PixabayAPI } from './partials-js/pixabay-api.js';
+import { createGalleryCardsTemplate } from './partials-js/templates/gallery-cards.js';
 
 const searchFormEl = document.querySelector('.js-search-form');
 const containerPhotoGalleryEl = document.querySelector('.js-gallery');
