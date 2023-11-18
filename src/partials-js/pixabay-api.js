@@ -22,6 +22,8 @@ export class PixabayAPI {
       },
     };
 
-    return axios.get('/api/', axiosOptions);
+    return axios.get('/api/', axiosOptions).then(response => {
+      return response.data;
+    });
   }
 }
